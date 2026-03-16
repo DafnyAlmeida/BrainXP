@@ -1,50 +1,98 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>BrainXP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <main class="flex items-center p-2 w-screen h-screen">
-        <div class="bg-black w-200  h-full rounded-2xl p-7 flex-col justify-between">
-          <div class="border border-white text-white px-4 py-1 rounded-full w-fit">
-            <p>Logo</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>BrainXP</title>
+</head>
+
+<body>
+  <div id="root">
+
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+  <main class="flex items-center p-2 w-screen h-screen gap-7">
+    <!-- Quadrado preto com as informações -->
+    <div class="bg-black w-[65%] h-full rounded-2xl p-7 flex flex-col justify-between">
+
+      <div class="border border-white text-white px-4 py-1 rounded-full w-fit">
+        <p>Logo</p>
+      </div>
+      <!-- container dos textos convidativos -->
+      <div class="flex justify-around text-white mt-65 mb-20 gap-60">
+        <div class="text-4xl w-4">Estude conosco!</div>
+        <div class="mt-4 w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
+      </div>
+      
+      <!-- container dos quadrados enumerados com informações -->
+      <div class="flex items-center justify-around gap-5">
+
+        <div class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105"">
+              <div class=" bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
+          <div class="text-white  hover:text-white pt-1.75">1</div>
+        </div>
+
+        <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+      </div>
+
+      <div
+        class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105"">
+              <div class=" bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
+        <div class="text-white  hover:text-white pt-1.75">2</div>
+      </div>
+      <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    </div>
+    <div class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105">
+            <div class=" bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
+      <div class="text-white  hover:text-white pt-1.75">3</div>
+    </div>
+    <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    </div>
+    </div>
+    </div>
+    <!-- login ou cadastro -->
+    <div class="flex flex-col items-center p-5  text-black w-[35%] h-full bg- p">
+      <div class="text-2xl">Crie sua conta</div>
+      <div class="text-sm">Lorem ipsum is simply dummy text of the printing.</div>
+      
+      <!-- formas de login -->
+      <div class="flex justify-around gap-10 mt-7">
+        <div class="w-30  rounded-md p-4 border-2 border-black flex items-center justify-center">Google</div>
+        <div class="w-30 rounded-md p-4 border-2 border-black flex items-center justify-center">Apple</div>
+      </div>
+      <!-- ou -->
+      <div class="flex items-center justify-center gap-4 w-full mt-5">
+        <div class="w-40 h-px bg-gray-400"></div>
+        <span class="text-black text-sm">ou</span>
+        <div class="w-40 h-px bg-gray-400"></div>
+      </div>
+      <form action="" method="post" class="flex flex-col gap-4">
+        <div class="flex flex-row gap-4">
+          <div class="flex flex-col gap-2">
+            <div class="">Primeiro nome</div>
+            <div><input type="text" class="border-2 border-black p-4 rounded-md" required></div>
           </div>
-          <div class="flex justify-around text-white mt-65 mb-20 gap-60">
-            <div class="text-4xl w-4">Estude conosco!</div>
-            <div class="text-sm mt-4 w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
-          </div>
-          <div class="flex items-center justify-around gap-3">
-            <div class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105"">
-              <div class="bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
-                <div class="text-white  hover:text-white pt-1.75">1</div>
-              </div>
-              <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-            </div>
-            <div class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105"">
-              <div class="bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
-                <div class="text-white  hover:text-white pt-1.75">2</div>
-              </div>
-              <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-            </div>
-            <div class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105"">
-              <div class="bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
-                <div class="text-white  hover:text-white pt-1.75">3</div>
-              </div>
-              <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-            </div>
-            <div class="group w-70 h-52 p-4 bg-white/30 backdrop-blur-sm rounded-2xl text-white/70 hover:bg-white hover:backdrop-blur-none hover:text-black transition duration-300 hover:scale-105">
-              <div class="bg-white/30 rounded-full w-10 h-10 flex justify-center group-hover:bg-black transition">
-                <div class="text-white  hover:text-white pt-1.75">4</div>
-              </div>
-              <div class="pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-            </div>
+          <div class="flex flex-col gap-2">
+            <div class="">Segundo nome</div>
+            <div><input type="text" class="border-2 border-black p-4 rounded-md"></div>
           </div>
         </div>
-    </main>
-  </body>
+        <div class="flex flex-col gap-2">
+            <div class="">Email</div>
+            <div><input type="email" class="border-2 border-black p-4 rounded-md w-full" required></div>
+          </div>
+        <div class="flex flex-col gap-2">
+            <div class="">Senha</div>
+            <div><input type="password" class="border-2 border-black p-4 rounded-md w-full" required></div>
+          </div>
+        <div class="flex gap-2">
+          <div class=""><button class="border-2 w-4 h-4  border-black"></button> Visualizar senha</div>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
 </html>
